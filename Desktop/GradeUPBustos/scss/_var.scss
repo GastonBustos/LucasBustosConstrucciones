@@ -1,0 +1,59 @@
+$pal-red: #DA0037;
+$pal-white: #EDEDED;
+$pal-gray: #444444;
+$pal-black: #171717;
+$light-gray: #c0c0c0;
+
+
+
+/*-------------------Display Var-------------------*/
+$display: (
+    d: display
+);
+$display-type: (
+    bl: block,
+    fl: flex,
+    in: inline,
+    ib: inline-block,
+    ih: inherit,
+    it: initial,
+    no: none
+);
+
+@each $classD, $D in $display {
+    @each $classdisplay, $type in $display-type {
+        .#{$classD}-#{$classdisplay} {
+            #{$D}: #{$type};
+        }
+    }
+}
+
+/*-------------------Spaces-------------------*/
+$margin: (
+    m: margin,
+    mr: margin-right,
+    ml: margin-left,
+    mt: margin-top,
+    mb: margin-bottom
+);
+$margin-spaces: (
+    auto: auto,
+    0: 0,
+    5: 5px,
+    10: 10px,
+    15: 15px,
+    20: 20px,
+    25: 25px,
+    50: 50px,
+    100: 100px,
+);
+
+@each $classM, $M in $margin {
+    @each $classtype, $type in $margin-spaces {
+        .#{$classM}-#{$classtype} {
+            #{$M}: #{$type};
+        }
+    }
+    
+};
+
