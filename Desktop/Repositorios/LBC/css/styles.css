@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+#Nav {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: end; }
+  #Nav .Hamburger {
+    margin: 0 20px; }
+    #Nav .Hamburger .HamBox {
+      display: flex;
+      flex-direction: column; }
+      #Nav .Hamburger .HamBox .Line {
+        background-color: white;
+        height: 5px;
+        width: 30px;
+        margin: 4px; }
